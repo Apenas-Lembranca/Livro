@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Um livro que talvez nunca tenha sido escrito</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+    /* Fundo amarelado com textura sutil */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff8e7;
+      background-image: 
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 70%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+      font-family: 'Great Vibes', cursive;
+      color: #4a3c31;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pagina {
+      background: #fffdf4;
+      max-width: 480px;
+      padding: 40px 30px 50px 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      border: 1px solid #dccdb3;
+      text-align: center;
+      position: relative;
+    }
+
+    .titulo {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 0.3em;
+      color: #6e5849;
+      text-shadow: 1px 1px 0 #e9e3d7;
+    }
+
+    .subtitulo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.3rem;
+      margin-top: 0;
+      margin-bottom: 1.8em;
+      font-weight: 400;
+      color: #a18e7f;
+      letter-spacing: 0.05em;
+    }
+
+    img {
+      width: 110px;
+      margin: 0 auto 2.5em;
+      display: block;
+      opacity: 0.7;
+      filter: drop-shadow(1px 1px 1px rgba(110, 88, 73, 0.3));
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    img:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    p.citacao {
+      font-style: italic;
+      font-size: 1.15rem;
+      color: #8b7c6b;
+      margin-top: 3.5em;
+      margin-bottom: 3.5em;
+      line-height: 1.4;
+      font-family: 'Dancing Script', cursive;
+      user-select: none;
+    }
+
+    button {
+      background: #a1866f;
+      border: none;
+      border-radius: 32px;
+      padding: 14px 40px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.6rem;
+      color: #fff8e7;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(161, 134, 111, 0.5);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #8b7053;
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(139, 112, 83, 0.6);
+    }
+
+    button:active {
+      transform: scale(0.95);
+      box-shadow: 0 4px 8px rgba(139, 112, 83, 0.6);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="pagina fade-in">
+    <h1 class="titulo">Depois do Quase</h1>
+    <p class="subtitulo">Silêncios de um fim sem despedida</p>
+    <img src="planet.png" alt="Símbolo delicado" />
+    <p class="citacao">“Ficou tudo ali, entre o quase e o nunca mais”</p>
+    <button onclick="irParaCapitulo('sumario.html')">Abrir</button>
+  </div>
+
+
+  <script>
+    function irParaCapitulo(pagina) {
+      window.location.href = pagina;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recordações</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.foto-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  flex: 0 0 calc(50% - 20px); /* 2 cards por linha */
+  max-width: none;
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 12px 30px 12px;
+  font-family: 'Dancing Script', cursive;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+.foto-card.centralizado {
+    justify-content: center;
+    text-align: center;
+  }
+
+.galeria {
+  gap: 10px;
+}
+.foto-card {
+  width: calc(50% - 10px);
+}
+
+
+.foto-card:hover {
+  transform: rotate(-1.5deg) scale(1.02);
+}
+
+.foto-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.comentario {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 10px;
+  color: #4a3c2d;
+  font-style: italic;
+}
+
+    .comentario::before {
+      content: \"“\";
+    }
+
+    .comentario::after {
+      content: \"”\";
+    }
+  </style>
+</head>
+<body>
+  <div class="pagina fade-in">
+    <h2 class="capitulo">Recordações</h2>
+    <p style="text-align: center; font-style: italic;">Alguns momentos não precisam de legenda... mas deixamos algumas mesmo assim.</p>
+
+    <div class="galeria">
+
+      <div class="foto-card">
+        <img src="car.jpeg" alt="Foto 1" />
+        <div class="comentario">02-02-2025</div>
+      </div>
+
+            <div class="foto-card">
+        <img src="08-02-2025.jpeg" alt="Foto 3" />
+        <div class="comentario">08-02-2025</div>
+      </div>
+
+      <div class="foto-card centralizado">
+        <div class="comentario">"- Notou a maneira como Graham olha para Quinn? Após onze anos de casamento, mesma maneira coo eu te olho."</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="livro.jpeg" alt="Foto 2" />
+        <div class="comentario">"Cada frase que sai de seus lábios destrói tudo que eu sabia sobre mim msm"<BR> Em busca de cind...</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="carlos2.jpeg" alt="Foto 3" />
+        <div class="comentario">ultimo toque...</div>
+      </div>
+
+            <div class="foto-card centralizado">
+        <div class="comentario">"Percebi que preciso beija-la toda vez que ela ri, e Six ri bastante."<br>Em busca de cind...</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="26-02-2025.jpg" alt="Foto 3" />
+        <div class="comentario">Nasa<br>26-02-2025</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="carta.jpeg" alt="Foto 3" />
+        <div class="comentario">20-02-2025</div>
+      </div>
+
+            <div class="foto-card centralizado">
+        <div class="comentario">"-Às vezes, as pessoas entram em sua vida como estações. Apenas temporárias. Mas essa garota... ela entrou como uma tempestade, arrancando tudo pela raiz."<br>Em busca de cind...</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="carlos3.jpeg" alt="Foto 3" />
+        <div class="comentario">...</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="02-03-2025.jpg" alt="Foto 3" />
+        <div class="comentario">Nasa<br>02-03-2025</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="20-02-2025.jpeg" alt="Foto 3" />
+        <div class="comentario">20-02-2025</div>
+      </div>
+
+            <div class="foto-card centralizado">
+        <div class="comentario">"-Por que a coisa mais linda que você já experimentou é a mesma que mais dói perder?"<br>Em busca de cind...</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="14-12-2004.jpg" alt="Foto 3" />
+        <div class="comentario">Nasa<br>14-12-2004</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="cartas.jpeg" alt="Foto 3" />
+        <div class="comentario">...</div>
+      </div>
+
+      <div class="foto-card">
+        <img src="carlos4.jpeg" alt="Foto 3" />
+        <div class="comentario">12-02-2025<br>"- ..."</div>
+      </div>
+ </div>
+
+    <div class="navegacao">
+      <a href="despedida.html">⬅ Voltar</a>
+      <a href="index.html">FIM</a>
+    </div>
+  </div>
+
+  <audio autoplay loop style="display:none;">
+      <source src="segundoSol.mpeg" type="audio/mpeg" />
+      Seu navegador não suporta áudio.
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>

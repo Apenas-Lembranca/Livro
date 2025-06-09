@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  background: url('14-12-2004.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #3e2f1c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.pagina {
+  padding: 60px 20px;
+  max-width: 700px;
+  width: 90%;
+  background-color: rgba(255, 250, 230, 0.9);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+
+h1.titulo, h2.capitulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  text-align: justify; /* Adicionado para justificar o texto */
+}
+
+
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.navegacao a {
+  text-decoration: none;
+  color: #6b4e2f;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #a67c52;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8b633e;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.digitando::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
